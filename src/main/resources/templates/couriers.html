@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>kurierzy</title>
+</head>
+
+<body>
+<h1>Kurierzy</h1>
+
+<table >
+    <thead>
+    <tr>
+        <th>nazwa</th>
+        <th>sposob transportu</th>
+        <th>cena za kilometr</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each= "couriers: ${kurierzy}">
+        <td th:text ="${couriers.getName()}"></td>
+        <td th:text ="${couriers.getTransportation()}"></td>
+        <td th:text ="${couriers.getPrizePerKm()}"></td>
+    </tr>
+
+    </tbody>
+
+
+</table>
+
+</body>
+</html>
