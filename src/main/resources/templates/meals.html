@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Meals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+
+<div style="width: 30%; padding-left: 40px ">
+<h1>Posiłki</h1>
+<br/>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nazwa</th>
+        <th>Cena</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="meals:${meals}">
+        <td th:text="${meals.name}"></td>
+        <td th:text="${meals.price}"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
 
 </body>
 </html>
