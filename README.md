@@ -1,3 +1,2 @@
 # Dobrex
-Super projekt z zamawianiem jedzenia.
-
+Nasz grupowy projekt z zamawianiem jedzenia.
