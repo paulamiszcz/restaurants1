@@ -1,4 +1,4 @@
-package pl.javastart.dobrex;
+package pl.javastart.dobrex.meal;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

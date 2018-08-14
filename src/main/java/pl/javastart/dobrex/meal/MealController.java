@@ -1,4 +1,4 @@
-package pl.javastart.dobrex;
+package pl.javastart.dobrex.meal;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
