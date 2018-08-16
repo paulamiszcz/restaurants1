@@ -20,7 +20,7 @@
     <tr th:each="ingredient: ${ingredients}">
         <td th:text="${ingredient.name}"></td>
         <td th:text="${ingredient.price}"></td>
-        <td th:text="${ingredient.isSensitizing}"></td>
+        <td th:text="${ingredient.isSensitizing.description}"></td>
     </tr>
     </tbody>
 </table>
