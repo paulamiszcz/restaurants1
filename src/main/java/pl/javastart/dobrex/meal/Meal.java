@@ -14,6 +14,7 @@ public class Meal {
     private Long id;
     private String name;
     private BigDecimal price;
+    private String imageUrl;
 
     public Long getId() {
         return id;
@@ -37,5 +38,13 @@ public class Meal {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
