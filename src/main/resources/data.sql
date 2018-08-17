@@ -5,3 +5,7 @@ INSERT INTO city(id, name, longitude, latitude) VALUES (2, 'Warszawa', 52.13, 21
 INSERT INTO ingredient(name, price, is_sensitizing) VALUES ('Pieczarki', 21.19, 'YES');
 INSERT INTO ingredient(name, price, is_sensitizing) VALUES ('Bułka', 0.19, 'NO');
 INSERT INTO ingredient(name, price, is_sensitizing) VALUES ('Pomidory', 8.00, 'YES');
+INSERT INTO restaurant(name, adress) VALUES('Bernard','Rynek 36,Wrocław');
+INSERT INTO restaurant(name, adress) VALUES('Stara buda','Podwale 101,Wrocław');
+INSERT INTO restaurant(name, adress) VALUES('Restauracja PAPU','Niepodległości 132/136,Warszawa');
+INSERT INTO restaurant(name, adress) VALUES('Restauracja Amber Room','Al.Ujazdowskie 13,Warszawa');

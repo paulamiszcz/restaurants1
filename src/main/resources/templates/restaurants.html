@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restauracje</title>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nazwa</th>
+        <th>Adres</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="restaurants:${restaurants}">
+        <td th:text="${restaurants.name}"></td>
+        <td th:text="${restaurants.adress}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
