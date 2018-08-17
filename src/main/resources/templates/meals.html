@@ -11,20 +11,12 @@
 <h1>Posiłki</h1>
 <br/>
 
-<table class="table">
-    <thead>
-    <tr>
-        <th>Nazwa</th>
-        <th>Cena</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="meals:${meals}">
-        <td th:text="${meals.name}"></td>
-        <td th:text="${meals.price}"></td>
-    </tr>
-    </tbody>
-</table>
+    <div th:each="meal:${meals}">
+        <h4 th:text="${meal.name}"></h4>
+        <img th:src="${meal.imageUrl}" height="102" width="102"/>
+        <p th:text="'Cena ' + ${meal.price}+ ' zł'"></p>
+    </div>
+
 </div>
 
 </body>
